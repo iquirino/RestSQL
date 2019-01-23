@@ -14,9 +14,13 @@ You can base on our test to implement your own strategy:
     var testExpressionBuilder = new TestExpressionBuilder();
     testExpressionBuilder.Build("ab > 'DE' and (c = d or d > 4.3) and e>4 or  rere in (20,30,40,50) and defer between 2 and 3 or rerer not in ('432','234324')");
 
+Nuget Package: https://www.nuget.org/packages/RestSQL/
+
 Implemented strategies:
 
   SqlKata.QueryBuilder
+
+Nuget Package: https://www.nuget.org/packages/RestSQL.SqlKata/
   
 	var t = new Query().From("tblLalala").Where("Name", "Igor").Where(c=>c.Where("status","1").OrWhere("status","2"));
 
