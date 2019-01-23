@@ -5,6 +5,12 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Igor Quirino</Authors>
     <Company>Igor Quirino</Company>
+    <PackageProjectUrl>https://github.com/iquirino/RestSQL</PackageProjectUrl>
+    <Description>SqlKata QueryBuilder implementation for RestSQL</Description>
+    <RepositoryUrl>https://github.com/iquirino/RestSQL</RepositoryUrl>
+    <PackageTags>SQL, SQL PARSER, QUERY BUILDER, SQLKATA, RESTSQL, REST</PackageTags>
+    <Copyright>Copyright 2019 Igor Quirino</Copyright>
+    <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
