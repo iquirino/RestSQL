@@ -1,7 +1,6 @@
 using SqlKata;
-using System;
-using Xunit;
 using SqlKata.Compilers;
+using Xunit;
 
 namespace RestSQL.SqlKata.Tests
 {
@@ -10,10 +9,12 @@ namespace RestSQL.SqlKata.Tests
         [Fact]
         public void Test1()
         {
-            var t = new Query().From("tblLalala").Where("Name", "Igor").Where(c=>c.Where("status","1").OrWhere("status","2"));
+            var t = new Query().From("tblLalala").Where("Name", "Igor").Where(c => c.Where("status", "1").OrWhere("status", "2"));
 
             var compiler = new Oracle11gCompiler();
             var testExpressionBuilder = new SqlKataBuilder();
+
+            //testExpressionBuilder.OnColumnName += cname => cname + "_C";
 
             var q = testExpressionBuilder.Build("ab > 'DE' and (c = d or d > 4.3) and e>4 or  rere in (20,30,40,50) and defer between 2 and 3 or rerer not in ('432','234324')");
 
