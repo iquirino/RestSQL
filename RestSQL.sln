@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestSQL", "RestSQL\RestSQL.csproj", "{96CE99D3-5C62-42B9-99F6-B44B6ECF8C5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestSQL.Tests", "RestSQL.Tests\RestSQL.Tests.csproj", "{8CA2AFF0-A3F5-47F8-9D8C-8F9FC42D14A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSQL.SqlKata", "RestSQL.SqlKata\RestSQL.SqlKata.csproj", "{3618BD0B-B683-43B2-A2C6-0C7760CD9E0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSQL.SqlKata.Tests", "RestSQL.SqlKata.Tests\RestSQL.SqlKata.Tests.csproj", "{BFD8A85D-D4A0-4D64-B8FC-FA50E6BD4973}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96CE99D3-5C62-42B9-99F6-B44B6ECF8C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CE99D3-5C62-42B9-99F6-B44B6ECF8C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CE99D3-5C62-42B9-99F6-B44B6ECF8C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CE99D3-5C62-42B9-99F6-B44B6ECF8C5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA2AFF0-A3F5-47F8-9D8C-8F9FC42D14A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA2AFF0-A3F5-47F8-9D8C-8F9FC42D14A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA2AFF0-A3F5-47F8-9D8C-8F9FC42D14A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA2AFF0-A3F5-47F8-9D8C-8F9FC42D14A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3618BD0B-B683-43B2-A2C6-0C7760CD9E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3618BD0B-B683-43B2-A2C6-0C7760CD9E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3618BD0B-B683-43B2-A2C6-0C7760CD9E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3618BD0B-B683-43B2-A2C6-0C7760CD9E0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD8A85D-D4A0-4D64-B8FC-FA50E6BD4973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD8A85D-D4A0-4D64-B8FC-FA50E6BD4973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD8A85D-D4A0-4D64-B8FC-FA50E6BD4973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD8A85D-D4A0-4D64-B8FC-FA50E6BD4973}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5EE5E4C-9D87-47C3-93F5-7008FACAD8D7}
+	EndGlobalSection
+EndGlobal
