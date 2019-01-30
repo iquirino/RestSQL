@@ -31,7 +31,7 @@ namespace RestQL.Tests.Providers
 
         public TestExpression Parenthesize(TestExpression statement)
         {
-            return new TestExpression(" ( " + statement.getWhereClause() + " ) ", statement.getParams());
+            return new TestExpression(" ( " + statement.GetWhereClause() + " ) ", statement.GetParams());
         }
 
         private TestExpression andOr(TestExpression statement1, TestExpression statement2, string op)
@@ -41,11 +41,11 @@ namespace RestQL.Tests.Providers
             if (statement2 == null)
                 return statement1;
 
-            string whereSql = statement1.getWhereClause() + op + statement2.getWhereClause();
+            string whereSql = statement1.GetWhereClause() + op + statement2.GetWhereClause();
 
             var p = new List<object>();
-            p.AddRange(statement1.getParams());
-            p.AddRange(statement2.getParams());
+            p.AddRange(statement1.GetParams());
+            p.AddRange(statement2.GetParams());
 
             return new TestExpression(whereSql, p);
         }

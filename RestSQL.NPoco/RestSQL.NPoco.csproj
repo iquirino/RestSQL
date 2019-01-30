@@ -5,19 +5,16 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Igor Quirino</Authors>
     <Company>Igor Quirino</Company>
-    <PackageProjectUrl>https://github.com/iquirino/RestSQL</PackageProjectUrl>
-    <Description>SqlKata QueryBuilder implementation for RestSQL</Description>
-    <RepositoryUrl>https://github.com/iquirino/RestSQL</RepositoryUrl>
-    <PackageTags>SQL, SQL PARSER, QUERY BUILDER, SQLKATA, RESTSQL, REST</PackageTags>
+    <Description>NPoco QueryBuilder implementation for RestSQL</Description>
     <Copyright>Copyright 2019 Igor Quirino</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/iquirino/RestSQL/master/LICENSE</PackageLicenseUrl>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
+    <PackageProjectUrl>https://github.com/iquirino/RestSQL</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iquirino/RestSQL</RepositoryUrl>
+    <PackageTags>SQL, SQL PARSER, QUERY BUILDER, NPOCO, RESTSQL, REST</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SqlKata" Version="1.1.6" />
+    <PackageReference Include="NPoco" Version="3.9.4" />
   </ItemGroup>
 
   <ItemGroup>

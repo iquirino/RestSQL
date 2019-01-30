@@ -18,7 +18,7 @@ namespace RestQL.Tests.Providers
         {
         }
 
-        public string toString()
+        public override string ToString()
         {
             return "TestExpression{" +
                     "whereClause='" + this.whereClause + '\'' +
@@ -26,12 +26,12 @@ namespace RestQL.Tests.Providers
                     '}';
         }
 
-        public string getWhereClause()
+        public string GetWhereClause()
         {
             return this.whereClause;
         }
 
-        public List<object> getParams()
+        public List<object> GetParams()
         {
             return this.p.ToList();
         }
