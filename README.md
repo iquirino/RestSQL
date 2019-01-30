@@ -18,10 +18,10 @@ Nuget Package: https://www.nuget.org/packages/RestSQL/
 
 Implemented strategies:
 
-  SqlKata.QueryBuilder
+ - SqlKata.QueryBuilder
+ 
+ https://www.nuget.org/packages/RestSQL.SqlKata/
 
-Nuget Package: https://www.nuget.org/packages/RestSQL.SqlKata/
-  
 	var t = new Query().From("tblLalala").Where("Name", "Igor").Where(c=>c.Where("status","1").OrWhere("status","2"));
 
 	var compiler = new Oracle11gCompiler();
@@ -33,3 +33,13 @@ Nuget Package: https://www.nuget.org/packages/RestSQL.SqlKata/
 
 	var sql = compiler.Compile(q.From("MyTable"));
 	var sqlb = compiler.Compile(qb);
+
+- NPoco
+
+https://www.nuget.org/packages/RestSQL.NPoco/
+
+	var s = new SqlBuilder();
+	s.Where("ab > 'DE' and (c = d or d > 4.3) and e>4 or  rere in (20,30,40,50) and defer between 2 and 3 or rerer not in ('432','234324')");
+	
+	var db = new Database("conn");
+	db.Fetch<User>(template);
