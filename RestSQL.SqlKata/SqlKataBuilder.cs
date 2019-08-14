@@ -113,7 +113,7 @@ namespace RestSQL.SqlKata
 
         public Query Like(string column, object value)
         {
-            return new Query().WhereLike(GetColumnName(column), value.ToString());
+            return new Query().WhereLike(GetColumnName(column), value.ToString(), false);
         }
 
         public Query NotBetween(string column, object start, object end)
@@ -133,7 +133,7 @@ namespace RestSQL.SqlKata
 
         public Query NotLike(string column, object value)
         {
-            return new Query().WhereNotLike(GetColumnName(column), value.ToString());
+            return new Query().WhereNotLike(GetColumnName(column), value.ToString(), false);
         }
 
         public Query Build(string query)
