@@ -10,6 +10,9 @@ namespace RestSQL.SqlKata
         public delegate string ColumnNameEventHandler(string columnName);
         public event ColumnNameEventHandler OnColumnName;
 
+        public delegate bool CustomQueryEventHandler(out Query query, RSqlQueryType action, string columnName, params object[] values);
+        public event CustomQueryEventHandler CustomQuery;
+
         public SqlKataBuilder(IColumnNameTransform transform = null)
         {
             if (transform != null)
@@ -68,72 +71,114 @@ namespace RestSQL.SqlKata
 
         public Query Between(string column, object start, object end)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.Between, column, start, end))
+                return query;
+
             return new Query().WhereBetween(GetColumnName(column), start, end);
         }
 
         public Query Equal(string column, object value)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.Equal, column, value))
+                return query;
+
             return new Query().Where(GetColumnName(column), value);
         }
 
         public Query GreaterOrEqual(string column, object value)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.GreaterOrEqual, column, value))
+                return query;
+
             return new Query().Where(GetColumnName(column), ">=", value);
         }
 
         public Query GreaterThan(string column, object value)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.GreatherThan, column, value))
+                return query;
+
             return new Query().Where(GetColumnName(column), ">", value);
         }
 
         public Query In(string column, List<object> values)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.In, column, values.ToArray()))
+                return query;
+
             return new Query().WhereIn(GetColumnName(column), values);
         }
 
         public Query IsNotNull(string column)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.IsNotNull, column))
+                return query;
+
             return new Query().WhereNotNull(GetColumnName(column));
         }
 
         public Query IsNull(string column)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.IsNull, column))
+                return query;
+
             return new Query().WhereNull(GetColumnName(column));
         }
 
         public Query LessOrEqual(string column, object value)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.LessOrEqual, column, value))
+                return query;
+
             return new Query().Where(GetColumnName(column), "<=", value);
         }
 
         public Query LessThan(string column, object value)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.LessThan, column, value))
+                return query;
+
             return new Query().Where(GetColumnName(column), "<", value);
         }
 
         public Query Like(string column, object value)
         {
-            return new Query().WhereLike(GetColumnName(column), value.ToString(), false);
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.Like, column, value))
+                return query;
+
+            return new Query().WhereLike(GetColumnName(column), value.ToString(), true);
         }
 
         public Query NotBetween(string column, object start, object end)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.NotBetween, column, start, end))
+                return query;
+
             return new Query().WhereNotBetween(GetColumnName(column), start, end);
         }
 
         public Query NotEqual(string column, object value)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.NotEqual, column, value))
+                return query;
+
             return new Query().Where(GetColumnName(column), "!=", value);
         }
 
         public Query NotIn(string column, List<object> values)
         {
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.NotIn, column, values.ToArray()))
+                return query;
+
             return new Query().WhereNotIn(GetColumnName(column), values);
         }
 
         public Query NotLike(string column, object value)
         {
-            return new Query().WhereNotLike(GetColumnName(column), value.ToString(), false);
+            if (CustomQuery != null && CustomQuery(out Query query, RSqlQueryType.NotLike, column, value))
+                return query;
+
+            return new Query().WhereNotLike(GetColumnName(column), value.ToString(), true);
         }
 
         public Query Build(string query)

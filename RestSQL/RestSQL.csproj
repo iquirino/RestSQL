@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,9 +12,9 @@
     <PackageTags>SQL, SQL PARSER, QUERY BUILDER, SQLKATA, RESTSQL, REST</PackageTags>
     <Copyright>Copyright 2019 Igor Quirino</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/iquirino/RestSQL/master/LICENSE</PackageLicenseUrl>
-    <AssemblyVersion>1.0.1.1</AssemblyVersion>
-    <FileVersion>1.0.1.1</FileVersion>
-    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
