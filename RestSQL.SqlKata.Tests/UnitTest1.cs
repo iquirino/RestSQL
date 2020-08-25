@@ -11,7 +11,8 @@ namespace RestSQL.SqlKata.Tests
         {
             var t = new Query().From("tblLalala").Where("Name", "Igor").Where(c => c.Where("status", "1").OrWhere("status", "2"));
 
-            var compiler = new Oracle11gCompiler();
+            var compiler = new OracleCompiler();
+            compiler.UseLegacyPagination = true;
             var testExpressionBuilder = new SqlKataBuilder();
 
             //testExpressionBuilder.OnColumnName += cname => cname + "_C";

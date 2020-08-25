@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Igor Quirino</Authors>
     <Company>wareboss.com</Company>
     <Description>NPoco QueryBuilder implementation for RestSQL</Description>
-    <Copyright>Copyright 2019 Igor Quirino</Copyright>
+    <Copyright>Copyright 2020 Igor Quirino (wareboss.com)</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/iquirino/RestSQL/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/iquirino/RestSQL</PackageProjectUrl>
     <RepositoryUrl>https://github.com/iquirino/RestSQL</RepositoryUrl>
     <PackageTags>SQL, SQL PARSER, QUERY BUILDER, NPOCO, RESTSQL, REST</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.0.6</Version>
   </PropertyGroup>
 
   <ItemGroup>

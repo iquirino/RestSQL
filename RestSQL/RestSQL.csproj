@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <LangVersion>7.3</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Igor Quirino</Authors>
@@ -10,11 +10,11 @@
     <Description>C# Sql Where Clause Parser to be used as Rest Parameters to filter data</Description>
     <RepositoryUrl>https://github.com/iquirino/RestSQL</RepositoryUrl>
     <PackageTags>SQL, SQL PARSER, QUERY BUILDER, SQLKATA, RESTSQL, REST</PackageTags>
-    <Copyright>Copyright 2019 Igor Quirino</Copyright>
+    <Copyright>Copyright 2020 Igor Quirino (wareboss.com)</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/iquirino/RestSQL/master/LICENSE</PackageLicenseUrl>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
+    <FileVersion>1.0.6.0</FileVersion>
+    <Version>1.0.6</Version>
   </PropertyGroup>
 
   <ItemGroup>

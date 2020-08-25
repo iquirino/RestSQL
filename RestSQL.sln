@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestSQL", "RestSQL\RestSQL.csproj", "{96CE99D3-5C62-42B9-99F6-B44B6ECF8C5D}"
 EndProject
@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestSQL.SqlKata", "RestSQL.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestSQL.SqlKata.Tests", "RestSQL.SqlKata.Tests\RestSQL.SqlKata.Tests.csproj", "{BFD8A85D-D4A0-4D64-B8FC-FA50E6BD4973}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSQL.NPoco", "RestSQL.NPoco\RestSQL.NPoco.csproj", "{54910F9F-C226-491B-8780-4C7806D4AD8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestSQL.NPoco", "RestSQL.NPoco\RestSQL.NPoco.csproj", "{54910F9F-C226-491B-8780-4C7806D4AD8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSQL.NPoco.Tests", "RestSQL.NPoco.Tests\RestSQL.NPoco.Tests.csproj", "{0CB2E12E-D3E3-49D7-9AC8-D436A24F6E19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestSQL.NPoco.Tests", "RestSQL.NPoco.Tests\RestSQL.NPoco.Tests.csproj", "{0CB2E12E-D3E3-49D7-9AC8-D436A24F6E19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
