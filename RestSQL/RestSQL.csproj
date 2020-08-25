@@ -5,7 +5,7 @@
     <LangVersion>7.3</LangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Igor Quirino</Authors>
-    <Company>Igor Quirino</Company>
+    <Company>wareboss.com</Company>
     <PackageProjectUrl>https://github.com/iquirino/RestSQL</PackageProjectUrl>
     <Description>C# Sql Where Clause Parser to be used as Rest Parameters to filter data</Description>
     <RepositoryUrl>https://github.com/iquirino/RestSQL</RepositoryUrl>

@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Igor Quirino</Authors>
-    <Company>Igor Quirino</Company>
+    <Company>wareboss.com</Company>
     <Description>NPoco QueryBuilder implementation for RestSQL</Description>
     <Copyright>Copyright 2019 Igor Quirino</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/iquirino/RestSQL/master/LICENSE</PackageLicenseUrl>
