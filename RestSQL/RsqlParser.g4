@@ -112,6 +112,12 @@ valueExpression
   : Character_String_Literal
   | numericValueExpression
   | Identifier
+  | dateTimeExpression
+  ;
+
+dateTimeExpression
+  : DateTimeLiteral
+  | DateLiteral
   ;
 
 numericValueExpression
@@ -128,5 +134,5 @@ sign
   ;
 
 columnName
-  :Identifier
+  : Identifier
   ;
