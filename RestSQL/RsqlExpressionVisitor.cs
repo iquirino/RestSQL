@@ -16,6 +16,7 @@
  */
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 namespace RestSQL
@@ -225,6 +226,21 @@ namespace RestSQL
             else if (valueExpressionContext.Identifier() != null)
             {
                 value = valueExpressionContext.Identifier().GetText();
+            }
+            else if (valueExpressionContext.dateTimeExpression() is { } dt)
+            {
+                if (dt.DateLiteral() is { } date)
+                {
+                    value = DateTime.ParseExact(date.GetText(), "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                } else if (dt.DateTimeLiteral() is { } dateTime)
+                {
+                    var text = dateTime.GetText().Replace('T', ' ');
+                    value = DateTime.ParseExact(text, "yyyy-MM-dd HH-mm-ss", CultureInfo.InvariantCulture);
+                }
+                else
+                {
+                    throw new InvalidOperationException();
+                }
             }
             else
             {

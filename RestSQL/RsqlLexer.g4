@@ -201,6 +201,18 @@ Character_String_Literal
   : QUOTE ( ESC_SEQ | ~('\\'|'\'') )* QUOTE
   ;
 
+DateLiteral
+  : Digit Digit Digit Digit '-'  Digit Digit '-' Digit Digit
+  ;
+
+TimeLiteral
+  : Digit Digit '-'  Digit Digit '-' Digit Digit
+  ;
+
+DateTimeLiteral
+  : DateLiteral 'T' TimeLiteral
+  ;
+
 fragment
 EXPONENT : ('e'|'E') ('+'|'-')? ('0'..'9')+ ;
 
