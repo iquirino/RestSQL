@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://github.com/iquirino/RestSQL</PackageProjectUrl>
     <RepositoryUrl>https://github.com/iquirino/RestSQL</RepositoryUrl>
     <PackageTags>SQL, SQL PARSER, QUERY BUILDER, NPOCO, RESTSQL, REST</PackageTags>
-    <Version>1.0.7</Version>
+    <Version>1.0.8</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
