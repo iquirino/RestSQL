@@ -12,9 +12,9 @@
     <PackageTags>SQL, SQL PARSER, QUERY BUILDER, SQLKATA, RESTSQL, REST</PackageTags>
     <Copyright>Copyright 2020 Igor Quirino (wareboss.com)</Copyright>
     <PackageLicenseUrl>https://raw.githubusercontent.com/iquirino/RestSQL/master/LICENSE</PackageLicenseUrl>
-    <AssemblyVersion>1.0.9.0</AssemblyVersion>
-    <FileVersion>1.0.9.0</FileVersion>
-    <Version>1.0.9</Version>
+    <AssemblyVersion>1.0.10.0</AssemblyVersion>
+    <FileVersion>1.0.10.0</FileVersion>
+    <Version>1.0.10</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
